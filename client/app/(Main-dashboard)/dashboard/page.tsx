@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { getOverviewData } from "./_lib/overviewData";
-
 export const dynamic = "force-dynamic";
 
 type DotTone = "danger" | "warning" | "info" | "neutral";
@@ -111,9 +111,12 @@ export default function DashboardHomePage() {
                 aria-hidden="true"
               />
             </button>
-            <button className="rounded-full bg-slate-900 px-4 py-2 text-[13px] font-medium text-white shadow-sm hover:bg-slate-800">
-              + New complaint
-            </button>
+           <Link
+   href="/public-portal/lodge"
+  className="rounded-full bg-slate-900 px-4 py-2 text-[13px] font-medium text-white shadow-sm hover:bg-slate-800"
+>
+  + New complaint
+</Link>
           </div>
         </div>
 
